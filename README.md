@@ -52,9 +52,9 @@ The static versions are as follows.
 
 Eight weights available for each of the static widths.
 
-`100, 200, 300, 400, 500, 600, 700, 800`
+Thin, Ultra-Light, Light, Regular, Medium, Semi-bold, Bold, Extra-bold
 
-`thin, ultra-light, light, regular, medium, semi-bold, bold, extra-bold`
+`100, 200, 300, 400, 500, 600, 700, 800`
 
 ### Static Widths
 
