@@ -18,6 +18,8 @@ Width available from `50` to `200`.
 
 ## Variable Example
 
+Check for font-variation-settings support.
+
 ```css
 pre {
     font-weight: 400;
