@@ -18,7 +18,19 @@ Width available from `50` to `200`.
 
 ## Variable Example
 
-`font-variation-settings: 'wdth' 90, 'wght' 535;`
+```css
+pre {
+    font-weight: 400;
+}
+
+    @supports( font-variation-settings: normal ) {
+        pre {
+            font-weight: 535;
+            font-variation-settings: 'wdth' 90, 'wght' 535;
+        }
+    }
+}
+```
 
 ## Static
 
