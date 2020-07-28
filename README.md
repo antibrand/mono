@@ -22,13 +22,20 @@ Check for font-variation-settings support.
 
 ```css
 pre {
+    font-family: 'mono', SFMono-Regular, 'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono', 'Liberation Mono', 'Courier New', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 400;
 }
 
-    @supports( font-variation-settings: normal ) {
+    @supports( font-variation-settings: wdth ) {
+        pre {
+            font-variation-settings: 'wdth' 90;
+        }
+    }
+
+    @supports( font-variation-settings: wght ) {
         pre {
             font-weight: 535;
-            font-variation-settings: 'wdth' 90, 'wght' 535;
+            font-variation-settings: 'wght' 535;
         }
     }
 }
