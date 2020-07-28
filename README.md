@@ -20,21 +20,24 @@ Width available from `50` to `200`.
 
 Check for font-variation-settings support.
 
-```css
+```scss
 pre {
     font-family: 'mono', SFMono-Regular, 'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono', 'Liberation Mono', 'Courier New', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    // Set normal weight.
     font-weight: 400;
 }
 
+    // Set a slightly narrowed width.
     @supports( font-variation-settings: wdth ) {
         pre {
             font-variation-settings: 'wdth' 90;
         }
     }
 
+    // Set a weight between normal and bold.
     @supports( font-variation-settings: wght ) {
         pre {
-            font-weight: 535;
             font-variation-settings: 'wght' 535;
         }
     }
