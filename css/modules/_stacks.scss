@@ -1,0 +1,41 @@
+///
+/// Font stack variables
+///
+/// The $monospace stack is default.
+/// The $mono stack is used in @supports( font-variation-settings ) queries.
+///
+
+$monospace :
+    SFMono-Regular,
+    'Menlo',
+    'Consolas',
+    'Roboto Mono',
+    'Ubuntu Monospace',
+    'Noto Mono',
+    'Oxygen Mono',
+    'Liberation Mono',
+    'Courier New',
+    Courier,
+    monospace,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+
+$mono :
+    'mono',
+    SFMono-Regular,
+    'Menlo',
+    'Consolas',
+    'Roboto Mono',
+    'Ubuntu Monospace',
+    'Noto Mono',
+    'Oxygen Mono',
+    'Liberation Mono',
+    'Courier New',
+    Courier,
+    monospace,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';

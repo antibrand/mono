@@ -1,0 +1,39 @@
+///
+/// Example stylesheet
+///
+/// Example using the mono variable font with SCSS.
+///
+/// @link https://github.com/antibrand/mono
+
+@import 'partials/_font-faces';
+@import 'modules/_stacks';
+
+pre {
+
+	// Default monospace font stack.
+    font-family: $monospace;
+
+    // Set normal weight.
+    font-weight: 400;
+
+    // Load the variable font stack if the browser supports it.
+    @supports( font-variation-settings: normal ) {
+        pre {
+            font-family: $mono;
+        }
+	}
+
+	// Set a slightly narrowed width.
+    @supports( font-variation-settings: wdth ) {
+        pre {
+            font-variation-settings: 'wdth' 90;
+        }
+    }
+
+    // Set a weight between normal and bold.
+    @supports( font-variation-settings: wght ) {
+        pre {
+            font-variation-settings: 'wght' 535;
+        }
+    }
+}

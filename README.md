@@ -22,11 +22,19 @@ Check for font-variation-settings support.
 
 ```scss
 pre {
-    font-family: 'mono', SFMono-Regular, 'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono', 'Liberation Mono', 'Courier New', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    // Default monospace font stack.
+    font-family: SFMono-Regular, 'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono', 'Liberation Mono', 'Courier New', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
     // Set normal weight.
     font-weight: 400;
-}
+
+    // Load the variable font stack if the browser supports it.
+    @supports( font-variation-settings: normal ) {
+        pre {
+            font-family: 'mono', SFMono-Regular, 'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono', 'Liberation Mono', 'Courier New', Courier, monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        }
+    }
 
     // Set a slightly narrowed width.
     @supports( font-variation-settings: wdth ) {
